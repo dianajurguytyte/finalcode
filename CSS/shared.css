@@ -1,0 +1,326 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Arial", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+
+}
+main{
+font-family: 'Montserrat', sans-serif;
+}
+
+.request{
+  font-size: 20px;
+  padding: 70px;
+}
+.autograph{
+  width: 100%;
+}
+/* HEADER  */
+
+.headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    padding: 5px 5px 5px 5px;
+
+}
+
+/* LOGO */
+
+
+.headerContainer img {
+    width: auto;
+    height: 60px;
+    left: 0;
+}
+
+/* BURGER MENU*/
+.burgerMenu {
+    z-index: 50;
+}
+
+.burgerBar1,
+.burgerBar2,
+.burgerBar3 {
+    width: 45px;
+    height: 3px;
+    background-color: black;
+    margin: 7px 10px;
+}
+
+
+
+.change .burgerBar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+}
+
+.change .burgerBar2 {
+    opacity: 0;
+}
+
+.change .burgerBar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+/* MOBILE SIDEBAR MENU */
+.navBar {
+    position: fixed;
+    left: -100vw;
+    background: white;
+    width: 100vw;
+    padding: 10px;
+    text-align: left;
+    z-index: 40;
+    transition: 1s;
+    box-sizing: border-box;
+    width: 26%;
+}
+
+/*
+.navBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 401px;
+    margin-left: -45px;
+}
+*/
+
+
+
+
+
+/* MOBILE SIDEBAR MENU ANIMATION */
+
+.moveTo {
+    left: 0;
+}
+
+@keyframes move1 {
+    to {
+        /*        transform: translate(100vw, 0px);*/
+        left: 0;
+    }
+}
+
+/* MOBILE SIDEBAR MENU LINKS*/
+
+
+
+.navBar ul a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+}
+
+
+.navBar a{
+        display:block;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 5px;
+    }
+
+.navBar a:hover {
+  text-decoration: underline;
+}
+
+
+
+a.active{
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+footer {
+    margin: 8px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+footer img {
+    width: auto;
+    height: 30px;
+
+
+}
+
+footer h2 {
+    font-size: .9em;
+    margin: 12px;
+}
+
+
+.mySlides{
+  width: 100%;
+}
+.cover2{
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        position: fixed;
+        margin-right:23%;
+
+        left: 0;
+        border-right: 1px solid black;
+    }
+    .section1{
+      display: grid;
+      grid-template-rows: : 1fr 1fr 3fr;
+      margin-left: 26%;
+
+    }
+    .ndpart{
+      display: grid;
+      grid-template-rows: : 1fr 1fr 3fr;
+      margin-left: 26%;
+
+    }
+
+    .hidden {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .navBar {
+        left:0;
+        bottom: 300px;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+
+
+
+    .burgerMenu {
+        display: none;
+    }
+
+.request{
+  grid-area: 1;
+}
+
+.MessageForm{
+    background-color: white;
+    height: 500px;
+    width: 300px;
+
+}
+
+    .headerContainer img {
+        width: auto;
+        position: fixed;
+        left: 0;
+        height: 150px;
+        top: 0;
+    }
+
+    .navBar ul a {
+
+        font-size: 40px;
+
+    }
+
+      footer{
+      position:fixed;
+    bottom:0;
+    left:0;
+
+    }
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+     .hidden{
+        display: block;
+    }
+    .video{
+      width: 860px;
+      height: 615px;
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 30px;
+
+
+    }
+
+
+.mySlides{
+  width: 70%;
+  height: 400px;
+  top: 20%;
+  margin: auto;
+
+}
+.sub1{
+  background-color: white; /* Green */
+  border: 5px;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  border-style: solid;
+  font-family: Arial;
+  display: inline-block;
+  font-size: 16px;
+}
+.ab1{
+  margin-left: 26%;
+  padding: 100px;
+}
+.autograph{
+  margin-left: 70%;
+  width: 300px;
+  height: 100px;
+}
+.article{
+  padding:20px;
+}
+.abouttext{
+  padding: 50px;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+}
+
+    #cat-nav{
+        margin-left: 1em;
+        color:dimgray;
+    }
+
+
+}

@@ -1,0 +1,32 @@
+
+    .aboutPhoto{
+        width:100%;
+
+    }
+
+
+
+@media only screen and (min-width: 600px){
+
+.aboutContainer{
+        margin-left: 26%;
+
+
+
+
+    }
+
+
+    .aboutText{
+      display: grid;
+        grid-column-start: 2;
+        grid-gap: 20px;
+    }
+
+    .about1{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
